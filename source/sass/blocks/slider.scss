@@ -1,0 +1,23 @@
+.slider {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+.slider__first-screen {
+  min-width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+.slider__text-item {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translate(0, -120%);
+  transition: all 0.3s ease-in 0s;
+  padding: 0;
+}
+
+
