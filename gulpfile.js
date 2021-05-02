@@ -85,6 +85,8 @@ gulp.task("html", function () {
 
 gulp.task("js_min", function () {
   return gulp.src('source/js/*.js')
+    .pipe(js_min())
+    .pipe(rename({suffix: '.min'}))
     .pipe (gulp.dest("build/js"))
 });
 

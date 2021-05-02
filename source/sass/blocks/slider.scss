@@ -11,6 +11,11 @@
   padding: 20px;
 }
 
+.slider__first-screen-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .slider__text-item {
   display: flex;
   flex-wrap: wrap;
@@ -19,5 +24,3 @@
   transition: all 0.3s ease-in 0s;
   padding: 0;
 }
-
-

@@ -13,10 +13,11 @@ const textContainer = document.querySelector('.slider__first-screen-text');
 const addBlockText = function () {
   const textElement = TextTemplate.cloneNode(true);
   textElement.textContent = input.value;
+  console.log(textElement.textContent);
 
-  // const fragment = document.createDocumentFragment();
-  // fragment.appendChild(textElement);
-  textContainer.appendChild(textElement);
+  const fragment = document.createDocumentFragment();
+  fragment.appendChild(textElement);
+  textContainer.appendChild(fragment);
 }
 
 const addAnimation = function () {
